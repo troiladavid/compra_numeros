@@ -20,7 +20,7 @@ for (let i = 1; i <= 2000; i++) {
 // Submit button logic
 document.getElementById('submitBtn').addEventListener('click', () => {
     const numbers = Array.from(selectedNumbers);
-    fetch('https://your-backend-url.com/submit', {
+    fetch('https://compra-numeros-back.onrender.com/submit', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
