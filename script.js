@@ -22,9 +22,8 @@ document.getElementById('submitBtn').addEventListener('click', () => {
     const numbers = Array.from(selectedNumbers);
     fetch('https://compra-numeros-back.onrender.com/submit', {
         method: 'POST',
-        mode: 'no-cors',
-        headers: {
-            'Content-Type': 'application/json',
+            headers: {
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({ selectedNumbers: numbers }),
     })
